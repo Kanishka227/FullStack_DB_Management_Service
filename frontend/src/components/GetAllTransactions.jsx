@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchBooks } from "../features/booksSlice";
 import { fetchTransactionsList } from "../features/transactionsSlice";
 
 const GetAllTransactions = () => {

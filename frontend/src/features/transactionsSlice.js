@@ -11,7 +11,9 @@ const initialState = {
 export const fetchTransactionsList = createAsyncThunk(
   "transactions/fetchTransactions",
   async () => {
-    const response = await axios.get("http://localhost:3000/transactions/");
+    const response = await axios.get(
+      "https://fullstack-db-management-service.onrender.com/transactions/"
+    );
     return response.data;
   }
 );

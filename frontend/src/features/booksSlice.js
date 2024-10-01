@@ -8,7 +8,9 @@ const initialState = {
 }
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async() => {
-  const response = await axios.get("http://localhost:3000/books/");
+  const response = await axios.get(
+    "https://fullstack-db-management-service.onrender.com/books/"
+  );
   return response.data
 })
 

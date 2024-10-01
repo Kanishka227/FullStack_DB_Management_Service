@@ -8,7 +8,9 @@ const initialState = {
 }
 
 export const fetchAllUsers = createAsyncThunk('users/fetchUsers',async() => {
-  const response = await axios.get("http://localhost:3000/users");
+  const response = await axios.get(
+    "https://fullstack-db-management-service.onrender.com/users"
+  );
   return response.data
 })
 
